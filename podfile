@@ -1,0 +1,24 @@
+workspace 'iOS_modules'
+
+project 'LoginFramework/LoginFramework.xcodeproj'
+project 'MainProject/MainProject.xcodeproj'
+project 'BaseUtil/BaseUtil.xcodeproj'
+
+target 'LoginFramework' do
+platform:ios, '8.0'
+
+project 'LoginFramework/LoginFramework.xcodeproj'
+end
+
+target 'MainProject' do
+  platform:ios, '8.0'
+  
+ project 'MainProject/MainProject.xcodeproj'
+ end
+
+target 'BaseUtil' do
+platform:ios, '8.0'
+	pod 'MJRefresh', '~> 3.1.15.3'
+ project 'BaseUtil/BaseUtil.xcodeproj'
+
+end

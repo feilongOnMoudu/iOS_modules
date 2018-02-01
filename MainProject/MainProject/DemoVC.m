@@ -1,0 +1,66 @@
+//
+//  DemoVC.m
+//  MainProject
+//
+//  Created by 宋飞龙 on 2018/1/15.
+//  Copyright © 2018年 宋飞龙. All rights reserved.
+//
+
+#import "DemoVC.h"
+#import "AutorotationVC.h"
+#import <LoginFramework/LoginFramework.h>
+
+@interface DemoVC ()
+
+@end
+
+@implementation DemoVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // Do any additional setup after loading the view.
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"Began");
+    if (self.block) {
+        self.block();
+    }
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"LoginFramework" ofType:@"framework"];
+    NSLog(@"path = %@", path);
+    
+    NSBundle *myBundle = [NSBundle bundleWithPath:path];
+    NSLog(@"myBunlde = %@", myBundle);
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:myBundle];
+    LoginVC * cview = (LoginVC *)[storyboard instantiateViewControllerWithIdentifier:@"LoginVC"];
+    cview.view.backgroundColor = [UIColor yellowColor];
+    cview.loginView.loginClick = ^(NSString *account, NSString *password, BOOL loginType) {
+        NSLog(@"account = %@ --- password = %@",account,password);
+    };
+    
+    [self presentViewController:cview animated:YES completion:nil];
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (void)gogogogo:(back)block {
+    self.block = block;
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+@end
