@@ -59,9 +59,9 @@
 ```
 
 
-## ==4、注意点==
-- ==框架工程的.h文件 头导入格式：
-例如 ：LoginVC.h  那么.m中应为 #import <LoginFramework/LoginVC.h> （尤为注意）==
+## 4、注意点
+- 框架工程的.h文件 头导入格式：
+例如 ：LoginVC.h  那么.m中应为 #import <LoginFramework/LoginVC.h> （尤为注意）
 
 - UnKnow Type name  重复导入
 
