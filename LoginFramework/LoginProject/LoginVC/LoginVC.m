@@ -26,10 +26,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self createRightItemWithTitle:@"232"];
+    [self.rightItem setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     self.LoginViewWidth.constant = Login_Width-30;
+    
     self.scrollView.directionalLockEnabled = YES;
     [self addGestureRecognizer];
     [self createTopView];
+}
+
+- (void)rightItemClick {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

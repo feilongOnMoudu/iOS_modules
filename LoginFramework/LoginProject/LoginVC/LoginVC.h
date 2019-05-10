@@ -10,8 +10,9 @@
 #import "SegmentedControl.h"
 #import "LoginView.h"
 #import "RegisterView.h"
+#import "BaseVC.h"
 
-@interface LoginVC : UIViewController
+@interface LoginVC : BaseVC
 
 @property (weak, nonatomic) IBOutlet LoginView *loginView;
 @property (weak, nonatomic) IBOutlet RegisterView *registerView;

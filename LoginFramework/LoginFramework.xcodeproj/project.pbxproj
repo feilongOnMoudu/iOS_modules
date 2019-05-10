@@ -14,6 +14,8 @@
 		513A3AFB200C5755005AF396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513A3AFA200C5755005AF396 /* Assets.xcassets */; };
 		513A3AFE200C5755005AF396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513A3AFC200C5755005AF396 /* LaunchScreen.storyboard */; };
 		513A3B01200C5755005AF396 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 513A3B00200C5755005AF396 /* main.m */; };
+		517456762285508F00A7C95A /* libLoginBaseUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E11153228521F30085FE41 /* libLoginBaseUtil.a */; };
+		517456772285509700A7C95A /* libLoginBaseUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51E11153228521F30085FE41 /* libLoginBaseUtil.a */; };
 		51E2F7F720215AD9004F4C8B /* HSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E2F7EB20215AD9004F4C8B /* HSTextField.m */; };
 		51E2F7F820215AD9004F4C8B /* RegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E2F7ED20215AD9004F4C8B /* RegisterView.m */; };
 		51E2F7F920215AD9004F4C8B /* DeleteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E2F7F020215AD9004F4C8B /* DeleteCell.m */; };
@@ -69,6 +71,7 @@
 		513A3AFD200C5755005AF396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		513A3AFF200C5755005AF396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		513A3B00200C5755005AF396 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		51E11153228521F30085FE41 /* libLoginBaseUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libLoginBaseUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E2F7EA20215AD9004F4C8B /* HSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSTextField.h; sourceTree = "<group>"; };
 		51E2F7EB20215AD9004F4C8B /* HSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSTextField.m; sourceTree = "<group>"; };
 		51E2F7EC20215AD9004F4C8B /* RegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterView.h; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517456772285509700A7C95A /* libLoginBaseUtil.a in Frameworks */,
 				01DB48F860261F51882F6687 /* libPods-LoginFramework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517456762285508F00A7C95A /* libLoginBaseUtil.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +123,7 @@
 		4704ADBD422CBC568926313A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51E11153228521F30085FE41 /* libLoginBaseUtil.a */,
 				FF8AC3205C9B319789B24463 /* libPods-LoginFramework.a */,
 			);
 			name = Frameworks;
@@ -269,7 +275,6 @@
 				513A3ADC200C5720005AF396 /* Frameworks */,
 				513A3ADD200C5720005AF396 /* Headers */,
 				513A3ADE200C5720005AF396 /* Resources */,
-				BED26F1ADC6B63ECF8BBF1A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,21 +379,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BED26F1ADC6B63ECF8BBF1A9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-LoginFramework/Pods-LoginFramework-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -577,13 +567,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE708EA16A77B9E5C544180A /* Pods-LoginFramework.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 32N56C76F5;
+				DEVELOPMENT_TEAM = RLML6W2452;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = LoginFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -602,13 +594,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9EACAFA167C0FE8C89426701 /* Pods-LoginFramework.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 32N56C76F5;
+				DEVELOPMENT_TEAM = RLML6W2452;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = LoginFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -627,15 +621,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32N56C76F5;
+				DEVELOPMENT_TEAM = RLML6W2452;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LoginProject/Login_config.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = LoginProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoginProject.LoginProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Debug;
 		};
@@ -643,15 +642,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 32N56C76F5;
+				DEVELOPMENT_TEAM = RLML6W2452;
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LoginProject/Login_config.pch";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = LoginProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LoginProject.LoginProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
 			};
 			name = Release;
 		};

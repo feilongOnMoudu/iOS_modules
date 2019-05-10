@@ -7,6 +7,7 @@
 //
 
 #import "AutorotationVC.h"
+#import "AppDelegate.h"
 
 @interface AutorotationVC ()
 
@@ -17,14 +18,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor cyanColor];
-    self.autorotation = YES;
+    UILabel * laebl=  [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    laebl.backgroundColor  = [UIColor blueColor];
+    [self.view addSubview:laebl];
     // Do any additional setup after loading the view.
 }
+
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    appDelegate.allowRotation = 0;
+    [self dismissViewControllerAnimated:NO completion:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+//    AppDelegate * appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    appDelegate.allowRotation = 1;
+    
+    
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    
+}
+
+//支持的方向
+ - (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+         return UIInterfaceOrientationMaskLandscapeRight;
+     }
+
+ //一开始的方向  很重要
+ -(UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
+         return UIInterfaceOrientationLandscapeRight;
+    }
 
 /*
 #pragma mark - Navigation

@@ -8,6 +8,7 @@
 
 #import "DemoVC.h"
 #import "AutorotationVC.h"
+#import "BaseNavigationController.h"
 #import <LoginFramework/LoginFramework.h>
 
 @interface DemoVC ()
@@ -18,12 +19,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //self.autorotation = YES;
+    UILabel * laebl=  [[UILabel alloc] initWithFrame:CGRectMake(200, 200, 200,200)];
+    laebl.backgroundColor  = [UIColor blueColor];
+    [self.view addSubview:laebl];
     
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(200, 500, 100, 50);
+    [button setTitle:@"gotologin" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(gotoLogin) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
     // Do any additional setup after loading the view.
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"Began");
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    
+    return UIInterfaceOrientationMaskPortrait;
+    
+}
+
+-(BOOL)shouldAutorotate{
+    
+    return YES;
+    
+}
+
+- (void)gotoLogin {
     if (self.block) {
         self.block();
     }
@@ -34,13 +56,27 @@
     NSLog(@"myBunlde = %@", myBundle);
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Login" bundle:myBundle];
+    
     LoginVC * cview = (LoginVC *)[storyboard instantiateViewControllerWithIdentifier:@"LoginVC"];
+    BaseNavigationController * nav = [[BaseNavigationController alloc] initWithRootViewController:cview];
+    
     cview.view.backgroundColor = [UIColor yellowColor];
+    cview.navigationItem.title = @"213213";
     cview.loginView.loginClick = ^(NSString *account, NSString *password, BOOL loginType) {
         NSLog(@"account = %@ --- password = %@",account,password);
+        [cview dismissViewControllerAnimated:YES completion:nil];
     };
     
-    [self presentViewController:cview animated:YES completion:nil];
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"Began");
+    
+    
+    
+//    AutorotationVC * vc = [[AutorotationVC alloc] init];
+//    [self presentViewController:vc animated:NO completion:nil];
     
 }
 

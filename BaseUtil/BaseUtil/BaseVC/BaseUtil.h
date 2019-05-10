@@ -9,6 +9,7 @@
 #ifndef BaseUtil_h
 #define BaseUtil_h
 
+#import "BaseVC.h"
 #import "BaseTableVC.h"
 #import "BaseCollectionVC.h"
 #import "BaseStaticTableVC.h"

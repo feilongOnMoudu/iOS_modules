@@ -71,7 +71,7 @@ NSString * const GET_PAGE_FLAG_NEXT = @"next";
     btn.titleLabel.textAlignment = NSTextAlignmentRight;
     [btn addTarget:self action:@selector(rightItemClick) forControlEvents:UIControlEventTouchUpInside];
     [btn setTitle:title forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.rightItem = btn;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
 }

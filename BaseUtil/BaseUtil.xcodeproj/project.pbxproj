@@ -23,6 +23,32 @@
 		51C5464E2019C5B000556649 /* BaseStaticTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5464C2019C5B000556649 /* BaseStaticTableVC.m */; };
 		51C546512019C7B800556649 /* BaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C5464F2019C7B800556649 /* BaseNavigationController.h */; };
 		51C546522019C7B800556649 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C546502019C7B800556649 /* BaseNavigationController.m */; };
+		51E11131228521D30085FE41 /* RefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5464420197C9400556649 /* RefreshFooter.m */; };
+		51E11132228521D30085FE41 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C546502019C7B800556649 /* BaseNavigationController.m */; };
+		51E11133228521D30085FE41 /* PresentAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C546362019754300556649 /* PresentAnimated.m */; };
+		51E11134228521D30085FE41 /* HSChainRefreshWhite.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5464120197B3200556649 /* HSChainRefreshWhite.m */; };
+		51E11135228521D30085FE41 /* DissmissAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C546342019754300556649 /* DissmissAnimated.m */; };
+		51E11136228521D30085FE41 /* BaseCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C546482019AFBF00556649 /* BaseCollectionVC.m */; };
+		51E11137228521D30085FE41 /* HSChainRefreshBlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5463E20197B0F00556649 /* HSChainRefreshBlue.m */; };
+		51E11138228521D30085FE41 /* BaseStaticTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5464C2019C5B000556649 /* BaseStaticTableVC.m */; };
+		51E11139228521D30085FE41 /* BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C5463A201975AE00556649 /* BaseTableVC.m */; };
+		51E1113A228521D30085FE41 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C54630201972D300556649 /* BaseVC.m */; };
+		51E1113C228521D30085FE41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C5462C2019722400556649 /* Foundation.framework */; };
+		51E1113D228521D30085FE41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C5462A2019721D00556649 /* UIKit.framework */; };
+		51E1113E228521D30085FE41 /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C546292019720B00556649 /* libMJRefresh.a */; };
+		51E1113F228521D30085FE41 /* libPods-BaseUtil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05DA472521DF0352428F1257 /* libPods-BaseUtil.a */; };
+		51E11141228521D30085FE41 /* BaseUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51E2F7DF201EBE97004F4C8B /* BaseUtil.h */; };
+		51E11142228521D30085FE41 /* BaseVC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51C5462F201972D300556649 /* BaseVC.h */; };
+		51E11143228521D30085FE41 /* BaseTableVC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51C54639201975AE00556649 /* BaseTableVC.h */; };
+		51E11144228521D30085FE41 /* BaseCollectionVC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51C546472019AFBF00556649 /* BaseCollectionVC.h */; };
+		51E11145228521D30085FE41 /* BaseStaticTableVC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51C5464B2019C5B000556649 /* BaseStaticTableVC.h */; };
+		51E11146228521D30085FE41 /* BaseNavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51C5464F2019C7B800556649 /* BaseNavigationController.h */; };
+		51E11149228521D30085FE41 /* BaseUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E2F7DF201EBE97004F4C8B /* BaseUtil.h */; };
+		51E1114A228521D30085FE41 /* BaseVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C5462F201972D300556649 /* BaseVC.h */; };
+		51E1114B228521D30085FE41 /* BaseTableVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C54639201975AE00556649 /* BaseTableVC.h */; };
+		51E1114C228521D30085FE41 /* BaseCollectionVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C546472019AFBF00556649 /* BaseCollectionVC.h */; };
+		51E1114D228521D30085FE41 /* BaseNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C5464F2019C7B800556649 /* BaseNavigationController.h */; };
+		51E1114E228521D30085FE41 /* BaseStaticTableVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C5464B2019C5B000556649 /* BaseStaticTableVC.h */; };
 		51E2F7D8201EBE68004F4C8B /* BaseVC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51C5462F201972D300556649 /* BaseVC.h */; };
 		51E2F7D9201EBE68004F4C8B /* BaseTableVC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51C54639201975AE00556649 /* BaseTableVC.h */; };
 		51E2F7DA201EBE68004F4C8B /* BaseCollectionVC.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 51C546472019AFBF00556649 /* BaseCollectionVC.h */; };
@@ -48,6 +74,21 @@
 				51E2F7DA201EBE68004F4C8B /* BaseCollectionVC.h in CopyFiles */,
 				51E2F7DB201EBE68004F4C8B /* BaseStaticTableVC.h in CopyFiles */,
 				51E2F7DC201EBE68004F4C8B /* BaseNavigationController.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E11140228521D30085FE41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+				51E11141228521D30085FE41 /* BaseUtil.h in CopyFiles */,
+				51E11142228521D30085FE41 /* BaseVC.h in CopyFiles */,
+				51E11143228521D30085FE41 /* BaseTableVC.h in CopyFiles */,
+				51E11144228521D30085FE41 /* BaseCollectionVC.h in CopyFiles */,
+				51E11145228521D30085FE41 /* BaseStaticTableVC.h in CopyFiles */,
+				51E11146228521D30085FE41 /* BaseNavigationController.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +122,7 @@
 		51C5464C2019C5B000556649 /* BaseStaticTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseStaticTableVC.m; sourceTree = "<group>"; };
 		51C5464F2019C7B800556649 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		51C546502019C7B800556649 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		51E11152228521D30085FE41 /* libLoginBaseUtil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLoginBaseUtil.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E2F7DF201EBE97004F4C8B /* BaseUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +135,17 @@
 				51C5462B2019721D00556649 /* UIKit.framework in Frameworks */,
 				51C546282019720B00556649 /* libMJRefresh.a in Frameworks */,
 				C199DDD0C1D48FA816EA5A73 /* libPods-BaseUtil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E1113B228521D30085FE41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E1113C228521D30085FE41 /* Foundation.framework in Frameworks */,
+				51E1113D228521D30085FE41 /* UIKit.framework in Frameworks */,
+				51E1113E228521D30085FE41 /* libMJRefresh.a in Frameworks */,
+				51E1113F228521D30085FE41 /* libPods-BaseUtil.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				51C5461C20196EED00556649 /* libBaseUtil.a */,
+				51E11152228521D30085FE41 /* libLoginBaseUtil.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +259,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51E11148228521D30085FE41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E11149228521D30085FE41 /* BaseUtil.h in Headers */,
+				51E1114A228521D30085FE41 /* BaseVC.h in Headers */,
+				51E1114B228521D30085FE41 /* BaseTableVC.h in Headers */,
+				51E1114C228521D30085FE41 /* BaseCollectionVC.h in Headers */,
+				51E1114D228521D30085FE41 /* BaseNavigationController.h in Headers */,
+				51E1114E228521D30085FE41 /* BaseStaticTableVC.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +295,26 @@
 			productReference = 51C5461C20196EED00556649 /* libBaseUtil.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		51E1112E228521D30085FE41 /* LoginBaseUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E1114F228521D30085FE41 /* Build configuration list for PBXNativeTarget "LoginBaseUtil" */;
+			buildPhases = (
+				51E1112F228521D30085FE41 /* [CP] Check Pods Manifest.lock */,
+				51E11130228521D30085FE41 /* Sources */,
+				51E1113B228521D30085FE41 /* Frameworks */,
+				51E11140228521D30085FE41 /* CopyFiles */,
+				51E11147228521D30085FE41 /* [CP] Copy Pods Resources */,
+				51E11148228521D30085FE41 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginBaseUtil;
+			productName = BaseUtil;
+			productReference = 51E11152228521D30085FE41 /* libLoginBaseUtil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -239,6 +326,9 @@
 				TargetAttributes = {
 					51C5461B20196EED00556649 = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					51E1112E228521D30085FE41 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -256,6 +346,7 @@
 			projectRoot = "";
 			targets = (
 				51C5461B20196EED00556649 /* BaseUtil */,
+				51E1112E228521D30085FE41 /* LoginBaseUtil */,
 			);
 		};
 /* End PBXProject section */
@@ -272,7 +363,43 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-BaseUtil/Pods-BaseUtil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51E1112F228521D30085FE41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaseUtil-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51E11147228521D30085FE41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-BaseUtil/Pods-BaseUtil-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -314,6 +441,23 @@
 				51C5464E2019C5B000556649 /* BaseStaticTableVC.m in Sources */,
 				51C5463B201975AE00556649 /* BaseTableVC.m in Sources */,
 				51C54631201972D300556649 /* BaseVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E11130228521D30085FE41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E11131228521D30085FE41 /* RefreshFooter.m in Sources */,
+				51E11132228521D30085FE41 /* BaseNavigationController.m in Sources */,
+				51E11133228521D30085FE41 /* PresentAnimated.m in Sources */,
+				51E11134228521D30085FE41 /* HSChainRefreshWhite.m in Sources */,
+				51E11135228521D30085FE41 /* DissmissAnimated.m in Sources */,
+				51E11136228521D30085FE41 /* BaseCollectionVC.m in Sources */,
+				51E11137228521D30085FE41 /* HSChainRefreshBlue.m in Sources */,
+				51E11138228521D30085FE41 /* BaseStaticTableVC.m in Sources */,
+				51E11139228521D30085FE41 /* BaseTableVC.m in Sources */,
+				51E1113A228521D30085FE41 /* BaseVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +606,46 @@
 			};
 			name = Release;
 		};
+		51E11150228521D30085FE41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D0952219EE800B59E73693 /* Pods-BaseUtil.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32N56C76F5;
+				GCC_INPUT_FILETYPE = automatic;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MJRefresh\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Debug;
+		};
+		51E11151228521D30085FE41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D56CB6DA94797E43429376 /* Pods-BaseUtil.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32N56C76F5;
+				GCC_INPUT_FILETYPE = automatic;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MJRefresh\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -479,6 +663,15 @@
 			buildConfigurations = (
 				51C5462620196EED00556649 /* Debug */,
 				51C5462720196EED00556649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E1114F228521D30085FE41 /* Build configuration list for PBXNativeTarget "LoginBaseUtil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51E11150228521D30085FE41 /* Debug */,
+				51E11151228521D30085FE41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
